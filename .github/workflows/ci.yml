@@ -23,4 +23,4 @@ jobs:
         uses: maxday/quarkus-dockerize-action@master
         with:
           tag: maxday/myApp
-          executablePath: myApp-runner
+          executablePath: quarkus-test2-1.0.0-SNAPSHOT.jar
