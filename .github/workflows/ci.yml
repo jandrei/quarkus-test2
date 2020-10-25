@@ -19,3 +19,8 @@ jobs:
           java-version: 11
       - name: Build
         run: ./mvnw verify -B
+      - name: Dockerize
+        uses: maxday/quarkus-dockerize-action@master
+        with:
+          tag: maxday/myApp
+          executablePath: myApp-runner
